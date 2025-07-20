@@ -166,6 +166,7 @@ npm run dev
 - `GET /api/users/profile/` - 获取用户资料
 - `PUT /api/users/profile/update/` - 更新用户资料
 - `POST /api/users/change-password/` - 修改密码
+- 'http://localhost:8000/admin/' - 超级管理员
 
 ## 页面路由
 
