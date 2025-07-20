@@ -1,0 +1,10 @@
+prefix=C:/Users/王方正/Desktop/框架/venv/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+Name: harfbuzz-subset
+Description: HarfBuzz font subsetter
+Version: 10.2.0
+Requires: harfbuzz =  10.2.0
+Libs: -L${libdir} -lharfbuzz-subset
+Cflags: -I${includedir}/harfbuzz

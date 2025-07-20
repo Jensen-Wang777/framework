@@ -1,0 +1,114 @@
+@import './base.css';
+@import './responsive.css';
+
+/* 全局响应式容器 */
+#app {
+  width: 100%;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 响应式内容容器 */
+.container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0 1rem;
+}
+
+/* 响应式网格系统 */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -0.5rem;
+}
+
+.col {
+  flex: 1;
+  padding: 0 0.5rem;
+}
+
+.col-auto {
+  flex: 0 0 auto;
+}
+
+/* 链接样式 */
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+@media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+}
+
+/* 响应式断点 */
+/* 超小屏幕 (手机, 小于576px) */
+@media (max-width: 575.98px) {
+  .container {
+    padding: 0 0.75rem;
+  }
+
+  #app {
+    font-size: 14px;
+  }
+}
+
+/* 小屏幕 (手机横屏, 576px及以上) */
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+    padding: 0 1rem;
+  }
+}
+
+/* 中等屏幕 (平板, 768px及以上) */
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 0 1.5rem;
+  }
+}
+
+/* 大屏幕 (桌面, 992px及以上) */
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    padding: 0 2rem;
+  }
+}
+
+/* 超大屏幕 (大桌面, 1200px及以上) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* 超超大屏幕 (超大桌面, 1400px及以上) */
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+
+/* 4K屏幕适配 (1920px及以上) */
+@media (min-width: 1920px) {
+  .container {
+    max-width: 1800px;
+  }
+}

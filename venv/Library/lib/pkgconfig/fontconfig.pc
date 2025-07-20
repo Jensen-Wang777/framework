@@ -1,0 +1,16 @@
+prefix=C:/Users/王方正/Desktop/框架/venv/Library
+includedir=${prefix}/include
+libdir=${prefix}/lib
+
+sysconfdir=C:/Users/王方正/Desktop/框架/venv/Library/etc
+localstatedir=C:/Users/王方正/Desktop/框架/venv/Library/var
+confdir=${sysconfdir}/fonts
+cachedir=${localstatedir}/cache/fontconfig
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.14.1
+Requires: freetype2 >=  21.0.15
+Libs: -L${libdir} -lfontconfig
+Libs.private: C:/Users/王方正/Desktop/框架/venv/Library/lib/expat.lib
+Cflags: -I${includedir}
